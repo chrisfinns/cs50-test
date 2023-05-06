@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="em">
+	<head>
+		<title>Search</title>
+        <style>
+            
+    
+                #grid {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns: auto 100px 100px
+
+                }
+                
+               
+               .grid-item1 {
+                   grid-column: 2
+                   }
+            .grid-item2 {
+                grid-column: 3
+                }
+            .grid-item3 {
+                grid-column: 1 / span 3;
+                margin-top: 100px;
+                }
+            
+            input[type=text] {
+                width: 50%;
+                border-radius:20px;
+                padding:12px;
+                border: 1px solid gray;
+                margin-left: auto;
+                margin-right: auto;
+                display:block
+                
+            }
+            
+            input[type=submit] {
+                display: block;
+                margin: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 8px;
+                border: gray;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="grid">
+            <div class="grid-item1">
+                <a href="index.html">Google Search</a></div>
+            <div lass="grid-item2">
+            <a href="Adv-search.html">Advanced Search</a></div>
+        
+        <div class="grid-item3">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input type="submit" value="Google Search">
+            </form>
+        </div>
+    </body>
+</html>
+
+
